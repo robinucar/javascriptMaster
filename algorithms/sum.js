@@ -17,31 +17,24 @@ const measurePerformance = () => {
   console.log(end - start)
 }
 
-start = performance.now();
-sum(6);
-end = performance.now()
-measurePerformance()
 
-
-start = performance.now();
-sum(12);
-end = performance.now()
-measurePerformance()
-
-start = performance.now();
-sum(120);
-end = performance.now()
-measurePerformance()
-
-start = performance.now();
-sum(120000);
-end = performance.now()
-measurePerformance()
 
 start = performance.now();
 sum(120000000);
 end = performance.now()
 measurePerformance()
 
+//faster way
+
+const sum1 = num => {
+  console.log((num / 2) * (1 + num))
+}
+//test the function
+sum1(5)
 
 
+//Measuring Algorithm Performance
+start = performance.now();
+sum1(120000000);
+end = performance.now()
+measurePerformance()
