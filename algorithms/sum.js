@@ -24,6 +24,8 @@ sum(120000000);
 end = performance.now()
 measurePerformance()
 
+//sum() Time Complexity = O(N) =  Linear
+
 //faster way
 
 const sum1 = num => {
@@ -38,3 +40,5 @@ start = performance.now();
 sum1(120000000);
 end = performance.now()
 measurePerformance()
+
+//sum1() Time Complexity = O(1) =  Constant
