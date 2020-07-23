@@ -10,3 +10,5 @@ return numbers[num]
 
 console.log(fib(4));
 console.log(fib(5));
+
+// Time Complexity = O(n) = Linear
