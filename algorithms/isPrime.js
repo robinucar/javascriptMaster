@@ -31,5 +31,5 @@ console.log(isPrime1(11));
 
 // Time Complexity :
 //Best case : O(1)  if number is 1 or 2
-//Avarage case : O(n) (sfaster way : O(sqrt(n)))
-//Worst Case : O(n) if number is big prime number such as 27,277
+//Avarage case : O(n) (faster way : O(sqrt(n)))
+//Worst Case : O(n) (faster way : O(sqrt(n))) if number is big prime number such as 27,277

@@ -11,3 +11,5 @@ const getMin = numbers => { //[3,1,5]
 console.log(getMin([5,2,6]));
 console.log(getMin([1,4,7]));
 console.log(getMin([7,9,5]));
+
+// Time Complexity = O(n) = Linear

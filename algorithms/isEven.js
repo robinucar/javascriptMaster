@@ -5,3 +5,5 @@ const isEven = number => {
 console.log(isEven(2));
 console.log(isEven(4));
 console.log(isEven(7));
+
+// Time Complexity = O(1) = Constant
