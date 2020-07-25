@@ -1,12 +1,3 @@
-// bir sayinin ikinin gucu olup olmadigini kontrol eden bir program yaziniz. sayi negatif olmasin
-//sayiyi bulursun
-//buldugun sayi 1 den kucuk olmayacak
-//sayi ikiye bolunuyora ikinin ussu olma ihtimali vardir.
-//sayi ikiye bolunmuyorsa ussu degildir
-//
-
-
-
 const isPowerOfTwo = (number) => {
   if (number < 1) {
     return false;
@@ -27,3 +18,9 @@ console.log(isPowerOfTwo(8)); //true
 console.log(isPowerOfTwo(15)); //false
 console.log(isPowerOfTwo(16)); //true
 console.log(isPowerOfTwo(-8)); //false
+
+
+// Time Complexity:
+  //Best case: O(1) = Constant   //suc as 13
+  //Avarage Case: O(log n) = Logarithmic Time Complexity
+  //Worst Case : O(log n) Logarithmic Time Complexity  // such as 1,125,899,906,842,624
