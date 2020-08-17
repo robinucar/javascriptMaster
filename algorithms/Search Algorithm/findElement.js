@@ -124,3 +124,4 @@ const arr = [1,3,10,40,99,100];
 
 console.log(rFindElement(arr, 99, 0));
 
+// Time Complexity = O(log n); Logarithmic
