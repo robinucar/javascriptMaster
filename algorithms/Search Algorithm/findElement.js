@@ -56,4 +56,41 @@ console.log(findObject(persons, {name: 'Robin', age: 32}));
 console.log(findObject(persons, {name:'Denis', age: 30}));
 console.log(findObject(persons, {name: 'Will', age: 40}));
 
-// Time Complexity = Best Case O(1); Avarage Case O(n); Worst Case O(n)
+// Time Complexity = Best Case O(1) = Constant;
+//Avarage Case O(n) = linear;
+//Worst Case O(n) = linear;
+
+
+//Bineary search
+
+const bFindElement = (sortedArray, elm) => {
+  let startIndex = 0;
+  let endIndex = sortedArray.length - 1;
+
+  while (startIndex <= endIndex) {
+    const middleIndex = startIndex +  Math.floor((endIndex - startIndex) / 2);
+
+    if(elm === sortedArray[middleIndex]) {
+      return middleIndex;
+    }
+
+    if (sortedArray[middleIndex] < elm) {
+      startIndex = middleIndex + 1;
+    } else {
+      endIndex = middleIndex -1
+    }
+  }
+
+}
+
+
+const arr = [1,3,10,40,99,100];
+
+console.log(bFindElement(arr,99));
+
+// Time Complexity = Best Case O(1) = Constant;
+// Avarage Case O(log n); Logarithmic
+//Worst Case O(log n) = Logarithmic
+
+
+//Bineary search
