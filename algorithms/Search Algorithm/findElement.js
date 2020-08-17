@@ -81,6 +81,8 @@ const bFindElement = (sortedArray, elm) => {
     }
   }
 
+  return elm + ' not found';
+
 }
 
 
@@ -92,5 +94,33 @@ console.log(bFindElement(arr,99));
 // Avarage Case O(log n); Logarithmic
 //Worst Case O(log n) = Logarithmic
 
+//Recursive Binary Search
 
-//Bineary search
+const rFindElement = (sortedArray, elm, offset) => {
+  console.log(sortedArray, elm)
+  let startIndex = 0;
+  let endIndex = sortedArray.length - 1;
+
+
+    const middleIndex = startIndex +  Math.floor((endIndex - startIndex) / 2);
+
+    if(elm === sortedArray[middleIndex]) {
+      return middleIndex + offset;
+    }
+
+    if (sortedArray[middleIndex] < elm) {
+      startIndex = middleIndex + 1;
+      offset = offset + middleIndex + 1;
+    } else {
+      endIndex = middleIndex;
+    }
+    return rFindElement(sortedArray.slice(startIndex, endIndex + 1), elm, offset);
+
+
+}
+
+
+const arr = [1,3,10,40,99,100];
+
+console.log(rFindElement(arr, 99, 0));
+
