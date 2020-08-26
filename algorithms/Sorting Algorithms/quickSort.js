@@ -45,3 +45,5 @@ console.log(sortedArray)
         Best Case: O(n * log n)
         Avarage case = O(n * log n)
         Worst Case = O(n^2)
+        Space Complexity: O(n) = Linear
+        */

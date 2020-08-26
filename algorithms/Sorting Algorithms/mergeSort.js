@@ -46,4 +46,4 @@ function sort(arr) {
 
 const sortedArray = sort([-10, 33, 100, 5]);
 
-console.log(sortedArray);
+console.log(sortedArray)

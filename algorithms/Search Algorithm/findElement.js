@@ -58,6 +58,7 @@ console.log(findObject(persons, { name: "Will", age: 40 }));
 // Time Complexity = Best Case O(1) = Constant;
 //Avarage Case O(n) = linear;
 //Worst Case O(n) = linear;
+//Space Complexity = O(1) = Constant;
 
 //Bineary search
 
@@ -87,8 +88,9 @@ const arr = [1, 3, 10, 40, 99, 100];
 console.log(bFindElement(arr, 99));
 
 // Time Complexity = Best Case O(1) = Constant;
-// Avarage Case O(log n); Logarithmic
-//Worst Case O(log n) = Logarithmic
+// Avarage Case O(log n); Logarithmic;
+//Worst Case O(log n) = Logarithmic;
+//Space Complexity = O(1) = Constant;
 
 //Recursive Binary Search
 

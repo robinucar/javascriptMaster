@@ -39,4 +39,5 @@ console.log(sortedArray);
 /*      Time Complexity :
           Best Case : (Items are already sorted) O(n);
           Avarage Case = O(n^2) = Quadratic Time Complexity;
-          Worst Case = O(n^2) = Quadratic Time Complexity;          */
+          Worst Case = O(n^2) = Quadratic Time Complexity;
+        Space Complexity: O(1) = Constant                          */
