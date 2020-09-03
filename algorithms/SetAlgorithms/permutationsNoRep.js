@@ -1,3 +1,4 @@
+//permutations without repetitions
 const getPermutations = (options) => {
   const permutations = [];
   //console.log('FUNCTION STARTING');
